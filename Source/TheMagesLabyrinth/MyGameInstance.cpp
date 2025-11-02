@@ -19,3 +19,39 @@ void UMyGameInstance::ResetGold()
 {
 	TotalGold = 0;
 }
+
+void UMyGameInstance::AddHitPoints(int32 HitPoints)
+{
+	TotalHitPoints += HitPoints;
+
+	// Debug Text to see if the function is working properly or noth
+	UE_LOG(LogTemp, Log, TEXT("Current HP value is: %d"), TotalHitPoints);
+}
+
+int32 UMyGameInstance::GetHitPoints() const
+{
+	return TotalHitPoints;
+}
+
+void UMyGameInstance::ResetHitPoints()
+{
+	TotalHitPoints = 100;
+}
+
+void UMyGameInstance::AddManaPoints(int32 ManaPoints)
+{
+	TotalManaPoints += ManaPoints;
+
+	// Debug Text to see if the function is working properly or noth
+	UE_LOG(LogTemp, Log, TEXT("Current MP value is: %d"), TotalManaPoints);
+}
+
+int32 UMyGameInstance::GetManaPoints() const
+{
+	return TotalManaPoints;
+}
+
+void UMyGameInstance::ResetManaPoints()
+{
+	TotalManaPoints = 150;
+}
