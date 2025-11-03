@@ -28,7 +28,7 @@ public:
 	void ResetGold();
 
 	// Can be used and called within Blueprint Graphs to increase or decrease player's HP value
-	UFUNCTION(BlueprintCallable, Category = "Hit Pints")
+	UFUNCTION(BlueprintCallable, Category = "Hit Points")
 	void AddHitPoints(int32 HitPoints);
 
 	// Used to get current HP value, can be used/called in debug or later implemented for UI
