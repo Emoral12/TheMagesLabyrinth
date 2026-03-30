@@ -29,11 +29,11 @@ public:
 
 	// Can be used and called within Blueprint Graphs to increase or decrease player's HP value
 	UFUNCTION(BlueprintCallable, Category = "Hit Points")
-	void AddHitPoints(int32 HitPoints);
+	void AddHitPoints(float HitPoints);
 
 	// Used to get current HP value, can be used/called in debug or later implemented for UI
 	UFUNCTION(BlueprintCallable, Category = "Hit Points")
-	int32 GetHitPoints() const;
+	float GetHitPoints() const;
 
 	// Resets HP back to its starting value, should be called upon death/game over
 	UFUNCTION(BlueprintCallable, Category = "Hit Points")
@@ -56,7 +56,7 @@ private:
 	int32 TotalGold = 0;
 
 	// Starting HP value is set to 100
-	int32 TotalHitPoints = 100;
+	float TotalHitPoints = 300.0;
 
 	// Starting MP Value is set to 150
 	int32 TotalManaPoints = 150;
