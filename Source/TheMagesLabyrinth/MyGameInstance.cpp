@@ -20,7 +20,7 @@ void UMyGameInstance::ResetGold()
 	TotalGold = 0;
 }
 
-void UMyGameInstance::AddHitPoints(int32 HitPoints)
+void UMyGameInstance::AddHitPoints(float HitPoints)
 {
 	TotalHitPoints += HitPoints;
 
@@ -35,7 +35,7 @@ int32 UMyGameInstance::GetHitPoints() const
 
 void UMyGameInstance::ResetHitPoints()
 {
-	TotalHitPoints = 100;
+	TotalHitPoints = 300.0;
 }
 
 void UMyGameInstance::AddManaPoints(int32 ManaPoints)
